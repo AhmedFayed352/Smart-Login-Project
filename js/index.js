@@ -61,6 +61,9 @@ function Login() {
       ) {
         localStorage.setItem("sessionforuser", users[i].name);
         window.location.href = "welcome.html";
+      } else {
+        invalidMsg.innerHTML = "incorrect email or password";
+        invalidMsg.style.color = "red";
       }
     }
   } else {
