@@ -102,7 +102,7 @@ function logOut() {
   window.location = "index.html";
 }
 
-var nameRegex = /^[a-zA-Z]{3,}$/;
+var nameRegex = /^[a-zA-Z\s]{3,}$/;
 var emailRegex =
   /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 var passwordRegex =
